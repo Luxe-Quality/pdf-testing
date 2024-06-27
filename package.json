@@ -1,0 +1,34 @@
+{
+    "name": "pdf-testing",
+    "version": "1.0.0",
+    "description": "Repo with different approaches to testing pdf",
+    "main": "index.js",
+    "scripts": {},
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Luxe-Quality/pdf-testing.git"
+    },
+    "keywords": [
+        "pdf",
+        "testing",
+        "visual comparison",
+        "data comparison",
+        "playwright",
+        "pdf-parse",
+        "compare-pdf",
+        "pdf-visual-diff"
+    ],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Luxe-Quality/pdf-testing/issues"
+    },
+    "homepage": "https://github.com/Luxe-Quality/pdf-testing#readme",
+    "devDependencies": {
+        "@playwright/test": "^1.45.0",
+        "@types/node": "^20.14.9",
+        "compare-pdf": "^1.1.8",
+        "pdf-parse": "^1.1.1",
+        "pdf-visual-diff": "^0.9.0"
+    }
+}
