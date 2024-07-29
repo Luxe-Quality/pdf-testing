@@ -20,7 +20,7 @@ test.describe('pdf-parse', { tag: '@pdf-parse' }, async () => {
         expect(pdfData.text).toEqual(basePdfText('01.01.2000'));
     });
 
-    test.only('should compare different PDFs', async ({}) => {
+    test('should compare different PDFs', async ({}) => {
         const pdfData = await pdf(
             fs.readFileSync(path.join(DATA_FOLDER, ACTUAL_PDF)),
         );
