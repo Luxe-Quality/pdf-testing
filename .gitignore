@@ -1,3 +1,8 @@
+# Playwright
+reports
+data/pdf-visual-diff/*/*.new.png
+data/pdf-visual-diff/*/*.diff.png
+
 # Logs
 logs
 *.log
