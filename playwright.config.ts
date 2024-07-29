@@ -1,4 +1,7 @@
 import { defineConfig, devices } from '@playwright/test';
+import path from 'path';
+
+export const DATA_FOLDER = path.join(__dirname, 'data');
 
 export default defineConfig({
     testDir: './tests',
@@ -6,7 +9,7 @@ export default defineConfig({
     forbidOnly: !!process.env.CI,
     retries: process.env.CI ? 1 : 0,
     workers: 5,
-    reporter: 'html',
+    reporter: [['html', { open: 'never', outputFolder: 'reports/html' }]],
     use: {
         // baseURL: 'http://127.0.0.1:3000',
 
